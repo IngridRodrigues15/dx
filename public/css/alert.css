@@ -1,0 +1,56 @@
+/*======================================Header do Modal============================================*/
+.alert-header{
+	background: transparent;
+}
+/*========================================Botão fechar=============================================*/
+.alert-header .close{
+	font-size: 40px;
+	color: rgba(50,50,50,1);
+	transform: translateX(22px) translateY(-10px);
+	line-height: 0;
+}
+.alert-header .close:hover{
+	background-color: transparent;
+	color: rgba(100,100,100,1);
+}
+/*========================================Modal Content============================================*/
+.alert-content{
+	padding:25px;
+	border-radius: 10px;
+	background: rgba(216,216,216,1);
+}
+/*==========================================ICONE==================================================*/
+.icone-erro{
+	text-align: center;
+	color: rgba(89,89,89,1);
+	font-size: 23rem;
+    line-height: 18rem;
+	height: 20rem;
+	width: 20rem;
+	background: rgba(229,185,181,1);
+	border: 13px solid rgba(89,89,89,1);
+	border-radius:50%;
+	top: 10px;
+}
+.icone-sucesso{
+	text-align: center;
+	color: rgba(89,89,89,1);
+	font-size: 23rem;
+    line-height: 17rem;
+	height: 20rem;
+	width: 20rem;
+	background: rgba(215,227,191,1);
+	border: 13px solid rgba(89,89,89,1);
+	border-radius:50%;
+	top: 10px;
+}
+/*========================================Texto====================================================*/
+.alert-text{
+	margin:0;
+	padding:70px 20px;
+	text-align: center;
+	color: black;
+}
+.alert-text h1{
+	font-size: 1.3em;
+}

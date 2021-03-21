@@ -1,0 +1,87 @@
+
+/*Header*/
+.header-menu,
+header{
+    top:0;
+    position:relative;
+    /*background: linear-gradient(180deg, #1d1d01, #060606 ,#1d1d01 );*/
+    background: linear-gradient(0deg, #21252a , #151515 );
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.logo-slot{
+    position: relative;
+    min-height:9.5em;
+}
+.logo{
+    transform: translateY(1.1em);
+    position:absolute;
+    box-sizing: content-box;
+}
+.logo .img{
+    /*background-image: url(../images/DXLogo.png);*/
+    box-sizing: border-box;
+    height: 7.5em;
+    display: inline;
+    transform: rotate(8deg);
+}
+ .titulo-logo {
+    font-family: 'Caveat', 'Architects Daughter', cursive;
+    display: inline-block;
+    transform: translateY(.65em);
+    color:#ebeb00;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1em;
+    font-weight: 600;
+    font-size: 3.5em;
+    position: relative;
+}
+.titulo-logo b{
+    font-family: "Roboto" , sans-serif;
+    font-size: 1.5em;
+}
+ .titulo-logo em{
+    /*position: absolute;*/
+    font-size:.85em;
+    width:10em;
+    transform:rotate(-1deg) translateY(0.15em);
+}
+.empty{
+    height:4em;
+}
+.header-menu .menu .menu-item {
+    position: relative;
+    top:4.1em;
+}
+.header-menu .menu .menu-item a {
+text-transform: capitalize;
+color: #fff;
+font-size: 1.5em;
+/*top: 0em;
+position: absolute;*/
+font-weight: 700;
+}
+
+.header-menu .menu .menu-item a:hover,
+.header-menu .menu .menu-item a:active,
+.header-menu .menu .menu-item a:focus{
+    color: #FFFF15;
+    text-decoration: none;
+}
+
+@media(max-width: 991px){
+    .header-menu .menu .menu-item {
+        top:0;
+    }
+}
+    @media(max-width: 306px){
+    .titulo-logo b{
+        font-size: 1em;
+    }
+    .titulo-logo em{
+        font-size:.7em;
+    }
+}

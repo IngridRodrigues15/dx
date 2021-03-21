@@ -1,0 +1,66 @@
+
+/*Header*/
+.header-menu,
+header{
+ display: none;
+}
+
+.margin-20 {
+    margin-top:20px; 
+}
+
+body{
+    background-image:url(../images/backhome.jpg);
+}
+.ico-pills {
+    border-bottom: 1px solid #C2C7CD;
+}
+.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+}
+.nav-justified > li, .nav-stacked > li {
+    float: none;
+    background-color: #eaeaea;
+    padding-top: 10px;
+}
+.nav > li, .nav > li > a {
+    position: relative;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    color: #000;
+    background-color: #f5ff58;
+}
+
+.ico-pills li a {
+    color: #475262;
+    padding: 5px;
+    border-bottom: 3px solid #FFF;
+    transition: border-bottom .3s;
+}
+.ico-pills li i {
+    display: block;
+    padding-bottom: 12px;
+    font-size: 18px;
+}
+.nav-justified > li > a {
+    margin-bottom: 0;
+}
+.nav-justified > li > a {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.button.btn {
+    background: #FFFF15;
+    font-weight: 600;
+    color: #000;
+    margin: 10px;
+    padding: 10px 15px;
+}
+
+.button.btn:hover {
+    background: #FFFF43;
+}

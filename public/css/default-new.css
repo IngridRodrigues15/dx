@@ -1,0 +1,1065 @@
+@CHARSET "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(https://fonts.googleapis.com/css?family=Caveat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+
+/*body*/
+body{
+    /*background-color: #000; */
+   /* background-image:url(../images/back3.jpg);*/
+   /*Não ficou ruim*/
+   /*background-image:url("http://www.analisebioenergetica.com.br/wp-content/uploads/2014/05/background-clean.jpg");*/
+   /*background-image:url("https://static.vecteezy.com/system/resources/previews/000/128/646/original/vector-wood-texture-background.jpg");*/
+   /*background-image:url("https://wallpaperscraft.com/image/net_color_background_dark_85551_2048x1152.jpg");*/
+  /* background-image:url("http://imgstocks.com/wp-content/uploads/2014/01/Abstract-background-dark-214342.jpg");*/
+    background-image:url(../images/back5.jpg);
+    background-attachment:fixed;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    font-family: 'Roboto' !important, sans-serif;
+    font-style:normal;
+    font-size:20px;
+    background-repeat:round;
+}
+
+
+/*nav*/
+nav{
+    font-size: 1.5rem;
+}
+.nav-tabs{
+    margin-top: 1.5em;
+    border: none;
+}
+.nav-tabs li {
+   /* background: linear-gradient(220deg, transparent 10px, #DDBD4C  10px);*/
+    background: linear-gradient(180deg, #202020 , #3a3a3a);
+    border: none;
+    border-radius: .2em 1em 0 0;
+}
+.nav-tabs li.active {
+    border-color: transparent;
+    /*background: linear-gradient(220deg, transparent 10px, #F5E06E 10px);*/
+    background: linear-gradient(180deg,#101010 , #2a2a2a);
+    border: none;
+    border-radius: .2em 1em 0 0;
+}
+ul.nav-tabs li:first-child > a {
+    box-shadow: none;
+}
+.nav-tabs li a {
+    color: #FFFF15;
+    font-weight: 700;
+    box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+}
+.nav > li > a:focus, 
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a {
+    color: #FFFF15;
+    border-color: transparent;
+    background: transparent;
+}
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li > a:hover {
+    border-color: transparent;
+    background-color: transparent;
+}
+.nav-tabs > li > a.unique-tab {
+    padding: 10px 50px;
+    font-size: .75em;
+    font-weight: 700;
+}
+
+
+/*Painel*/
+.painel{
+    /*  background-color: RGBA(0, 0, 0, 0.88);*/
+    background: radial-gradient(#101010 , #2a2a2a); /* Old browsers */
+    color: #fff;
+    min-height: 150px;
+    margin-top: 0;
+    border-radius: 0 0.25em 0.25em 0.25em;
+    padding: 5px 10px;
+}
+
+/*new-game*/
+.new-dice,
+.new-map,
+.new-card,
+.new-game {
+    background: #1a1a1a; /* Old browsers */
+    background: transparent;
+    color: #000;
+    padding: .2em.5em;
+    font-weight: 700;
+}
+.new-dice input[type="text"],
+.new-map input[type="text"],
+.new-card input[type="text"],
+.new-game input[type="text"] {
+    display: inline-block;
+    margin: 0;
+    font-size: 1em;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(246, 238, 238, 0);
+    border: none;
+    border-bottom: .1em solid #FFFF15;
+    color: #FFFF15;
+    font-weight: 700;
+    width: 100%;
+}
+.new-map input[name="nomeMapa"] {
+    width: 86%;
+}
+#name-game{
+    width:79% !important;
+}
+.new-game select {
+    height: 40px;
+}
+.new-dice input[type="text"] {
+    width: 75%;
+}
+.new-dice input[type="number"] {
+    background: transparent;
+    border: 1px solid #ffff15;
+    color: #ffff15;
+}
+.new-dice input[type="number"]:focus,
+.new-dice input[type="text"]:focus,
+.new-map input[type="text"]:focus,
+.new-card input[type="text"]:focus,
+.new-game input[type="text"]:focus {
+  outline: none;
+  border-bottom-color: #fff;
+  color: #fff;
+}
+.upload-button,
+.new-dice button,
+.new-map button,
+.new-card button,
+.new-game button,
+.new-question button{
+    background: #FFFF15;
+    border: none;
+    font-weight: 700;
+    width: 135px;
+    display: inline-block;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin: 5px;
+    color: #000;
+    
+}
+.new-question button {
+    margin: 20px 0px 0px 20px;
+    border-radius: 0;
+    width: 400px;
+    padding: 10px;
+}
+.upload-button:focus,
+.upload-button:hover,
+.upload-button:active,
+.new-game button:focus,
+.new-game button:hover,
+.new-game button:active,
+.new-card button:focus,
+.new-card button:hover,
+.new-card button:active,
+.new-question button:focus,
+.new-question button:hover,
+.new-question button:active,
+.new-question button:active:focus,
+.new-map button:focus,
+.new-map button:hover,
+.new-map button:active,
+.new-dice button:focus,
+.new-dice button:hover,
+.new-dice button:active{
+    color: #000000;
+    background: rgba(255,255,21,0.8);
+}
+
+
+
+/*painel-list*/
+.painel-list {
+    margin: 1em .15em;
+}
+.painel-list ul {
+    list-style: none;
+    padding: 0;
+}
+.painel-list ul li {
+    list-style: none;
+    padding: 10px 10px;
+    background: linear-gradient(180deg, #25282d , #151515);
+}
+.painel-list ul li a {
+    color: #fff;
+    text-transform: capitalize;
+}
+.painel-list ul li a:hover {
+    color: #c6e615;
+    text-decoration: none;
+}
+.painel-list .preview-map {
+    right: 50px;
+    position: relative;
+    float: right;
+    cursor: pointer; 
+}
+.painel-list .editar-pergunta-icone,
+.painel-list .editar-ficha-icone {
+    right: 92px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.painel-list .editar-mapa-icone {
+    right: 150px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.painel-list .alterMapNameIcon {
+    position: relative;
+    cursor: pointer;
+}
+.painel-list .alterCardNameIcon {
+    right: 45px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.painel-list .delete-dado,
+.painel-list .delete-mapa,
+.painel-list .delete-ficha {
+    right: 0;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.painel-list p {
+    margin: 5px;
+    color: #ffff15;
+}
+
+/*game-options*/
+.options-title{
+}
+
+.game-options a {
+    background: #FFFF15;
+    border: none;
+    font-weight: 700;
+    width: 135px;
+    display: inline-block;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin: 5px;
+    color: #000;
+}
+.game-options a:hover,
+.game-options a:active,
+.game-options a:focus{
+    text-decoration: none;
+    color: #000000;
+    background: rgba(255,255,21,0.8);
+}
+
+/*painel container */
+.container{
+    margin-bottom: 4em;
+}
+
+.painel-container {
+    background: radial-gradient(#101010 , #2a2a2a);
+    min-height: 500px;
+    border-radius: 0 .2em .2em .2em;
+    padding: 0 1em;
+}
+#maps-list .painel-container {
+    min-height: 750px;
+}
+
+.painel-container h2 {
+    color: #fff;
+    text-transform: capitalize;
+}
+.painel-container .titulo h2 {
+    color: #fff;   
+    
+}
+.painel-container .titulo p {
+     color: #fff;
+     margin: 15px 0;
+}
+
+/*painel-options*/
+.painel-options {
+    /*background: radial-gradient(#101010 , #2a2a2a);
+    min-height: 350px;*/
+    padding: 10px 15px;
+    border-radius: .2em;
+}
+.painel-options p {
+   color: #ffff15;
+   font-size: 12px;
+}
+/*.painel-options button{
+    font-weight: bold;
+    color: #000;
+    background: #ffff15;
+    padding: 5px 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+    min-width: 200px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.painel-options button:hover {
+    background: #FDFF5A;
+}
+.painel-options button.list-buttton:before{
+    content: "\003E";
+    margin: 0 10px;
+}
+.painel-options button.list-buttton{
+    color: #ffff15;
+    background: transparent;
+    border-bottom: 1px solid #ffff15;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 0;
+    background: linear-gradient(180deg, #424242 0%, #121111 100%);
+    margin: 0px -15px;
+    width: 113%;
+}
+.painel-options button.list-buttton:hover {
+    background: transparent;
+    background: linear-gradient(180deg, #424242 0%, #121111 100%);
+}*/
+.painel-options input{
+    display: inline-block;
+    margin: 0;
+    font-size: 21px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(246, 238, 238, 0);
+    border: none;
+    border-bottom: 2px solid #FFFF15;
+    color: #FFFF15;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 10px;
+}
+.painel-options label {
+    color: #fff;
+    font-weight: 500;
+}
+.painel-options input[type="checkbox"] {
+    display:none;
+}
+.painel-options label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    left: 0;
+    bottom: 1px;
+    background-color: #ffff15;
+}
+.painel-options input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    line-height: 20px;
+}
+.painel-options #campoTexto {
+    margin-top: -10px;
+}
+.painel-options .pontoForm textarea {
+    background-color: transparent;
+    color: #ffff15;
+    outline: none;
+    width: 100%;
+    border: none;
+    border: 1px solid #ffff15;
+    margin-bottom: 15px;
+}
+
+/*campoNumForm*/
+.campoNumForm {
+    margin-top:20px;
+}
+/*card-background*/
+.card-background{
+    height: 23em;
+    margin: auto;
+    /*background-image:url(../images/perga2.png);*/
+    background-color: #fff2ec;
+    overflow-y: scroll; 
+    background-repeat:round;
+    opacity:0.9;
+    background-size: 85%;
+
+}
+
+/*ficha container */
+.ficha-container {
+    padding: 20px;
+}
+.ficha-container .titulo h2{
+    color: #000;
+}
+.ficha-container .salvar {
+    bottom: 30px;
+    position: absolute;
+    right: 90px;
+}
+.ficha-container .salvar button {
+    background: #000;
+    border: none;
+    font-weight: 700;
+    width: 95px;
+    display: inline-block;
+    padding: .25em;
+    cursor: pointer;
+    margin: .25em;
+    color: #FFFF15;   
+}
+.ficha-container #questions-answered-list span {
+    color: #000;
+    text-align: left;
+    padding: 10px;
+}
+
+.ficha-container #questions-answered-list .fa-times {
+    color: #ff0505;
+}
+.ficha-container #questions-answered-list .fa-check {
+    color: #05ff11;
+}
+
+/*campos */
+.campos {
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.campos .field-sortable {
+    margin: 3px 3px 3px 0;
+    padding: 1px;
+    float: left;
+    width: 48%;
+    height: 45px;
+    text-align: left;
+}
+.campos .ui-state-highlight {
+  height: 45px;
+  width: 250px;
+  background-color: #f2cdbd; 
+}
+.campos input[type="text"] {
+    display: inline-block;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(246, 238, 238, 0);
+    border: none;
+    border-bottom: 2px solid #050505;
+}
+.campos button.edit-btn,
+.campos button.delete-btn {
+    background-color: transparent;
+    border: none;
+}
+
+/* Campos da ficha ativa */
+#card-list-fields-active {
+    color: #000;
+    text-transform: capitalize;
+}
+
+/*mapa*/
+
+.map-title{
+    margin-top:0;
+}
+.map-image {
+    width: 800px;
+    height: 600px;
+}
+.map-image .active{
+    width:800px;
+    height:600px;
+}
+.map-image img{
+    width: 800px;
+    height: 600px;
+}
+/*map-new*/
+.map-new {
+    margin-top: 0;
+    min-height: 200px;
+}
+
+/* leaflet popup */
+.leaflet-popup-content {
+    color: #000;
+}
+
+/*dados form*/
+.dadosForm .numeroLados{
+    width: 50px;
+    text-align:center;
+}
+/*alterar dado*/
+.alterar-dado #btn-delete-dice{
+    top: -10px;
+    position: absolute;
+    right: 20px;
+}
+.alterar-dado #input-alter-dice {
+   width: 66%; 
+}
+
+/* Upload - JFiler*/
+.jFiler-theme-default .jFiler-input {
+    font-family: 'Caveat', 'Architects Daughter', cursive !important;
+    font-weight: 700;
+    font-size: 15px;
+    width: 95%;
+    width: calc(100% -30px);
+    margin: 15px;
+    border-radius: 0;
+    height: 40px;
+    color: rgba(181,181,181,1);
+    background: linear-gradient(180deg, #333 0%, #212121 100%);
+    border: none;
+    
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+
+}
+.jFiler-items-default .jFiler-item {
+    background: linear-gradient(180deg, #333 0%, #212121 100%);
+    color: #fff;
+}
+.jFiler-theme-default .jFiler-input-button,
+.jFiler-theme-default .jFiler-input-button:active {
+    border-left: 1px solid #ffff02;
+    color: #000;
+    background-color: #ffff15;
+    background-image: linear-gradient(180deg,#fefe6d,#ffff15);
+}
+.jFiler-items-default .jFiler-item-assets a {
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.jFiler-items-default .jFiler-item-assets .jFiler-item-trash-action:hover,
+.jFiler-items-default .jFiler-item-assets .jFiler-item-trash-action:active {
+    color: #FFFF15;
+}
+.jFiler-items-default .jFiler-item .jFiler-item-icon {
+    color: #fff;
+}
+.upload-button {
+    margin: 0 15px 15px 15px;
+    width: 210px;
+}
+
+
+
+/* Default Map */
+.default-map {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+/* Dropdown */
+.dropdown {
+    display: inline-block;
+    padding: .5rem;
+    width: 100%;
+}
+.dropdown .btn {
+    border-radius: 0;
+    color: #fff;
+    background: linear-gradient(180deg, #636363 0%, #121111 100%);
+    display: inline;
+    height: 40px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+}
+.dropdown .btn .fa {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    top: 0;
+    right: 10px;
+    z-index: 100;
+    text-align: center;
+}
+.dropdown-menu {
+    border-radius: 0;
+    background: #4a4845;
+    width: 100%;
+}
+.dropdown-item {
+    display: block;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 15px;
+}
+a.dropdown-item:hover {
+    background-color: #292929;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+/* Question list */
+#questions-list li a.text {
+    max-width: 400px;
+    overflow: hidden;
+    display: inline-block;
+    height: 25px;
+}
+
+/* Answer Modal */
+#NewAnswerModal button{
+    display: block;
+}
+.answerCheckbox {
+    display: block;
+    margin: 10px 0;
+}
+.answerCheckbox input[type="checkbox"] + input[type="text"] {
+    display: inline-block;
+}
+.answerCheckbox input[type="text"] {
+    width: 96%;
+}
+#editAnswerModal textarea {
+    width: 100%;
+    display: block;
+}
+
+/* conexão com jogo ativo */
+.master_name{
+    position: absolute;
+    right:27px   
+    ;
+}
+
+/* Ordenação da lista de pontos*/
+.sortable-box {
+    margin-top: 370px; 
+}
+#sortable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    width: 100%; 
+    max-height: 180px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+}
+#sortable li { 
+    margin: 0 5px 5px 5px; 
+    padding: 5px; 
+    font-size: 1.2em; 
+    height: 40px;
+    line-height: .5em;
+    cursor: move;
+}
+#sortable .ui-state-highlight { 
+    height: 1.5em; 
+    line-height: 1.2em;
+}
+#sortable .fa {
+    color: #ebeb00;
+    font-size: 12px;
+    margin: 5px -5px;
+    float: right;
+}
+#sortable .point-name {
+    font-size: 12px;
+    text-transform: capitalize;
+    width: 40%;
+    overflow: hidden;
+    display: inline-block;
+}
+#sortable .point-question {
+    font-size: 9px;
+    display: inline-block;
+}
+#sortable .point-description {
+    display: none;
+}
+
+.questionForm textarea {
+    display: block;
+    width: 100%;
+}
+
+/* Grid */
+.grid .grid-item{
+    margin: 15px 0;
+    background-color: #000;
+    box-sizing: content-box;
+    border: 10px solid;
+}
+.grid .grid-item a.main-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+.grid .grid-item a {
+    color: rgb(138, 138, 138);
+    font-size: 13px;
+    text-decoration: none;
+
+}
+.grid .grid-item .create-game-box img {
+    filter: opacity(0.3);
+    -webkit-filter: opacity(0.3);
+    height: 260px;
+}
+.grid .grid-item a:hover {
+    color: #413f3f;
+    text-decoration: none;
+}
+.grid .grid-item img {
+    width: 100%;
+    height: 190px;
+    filter: opacity(0.9);
+    -webkit-filter: opacity(0.9);
+}
+.grid .grid-item .grid-box:hover img{
+    filter: opacity(0.3);
+    -webkit-filter: opacity(0.3);
+}
+/*.grid .grid-item .grid-box .grid-box-options {
+    display: none;
+}*/
+.grid .grid-item .grid-box .grid-box-options {
+    background: #fff;
+    padding: 5px;
+}
+.grid .grid-item .grid-box .grid-box-options span {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+}
+.grid .grid-item .grid-box a.button {
+    display: none;
+}
+.grid .grid-item .grid-box:hover a.button {
+    display: block;
+    margin: 5px;
+    text-align: center;
+    position: absolute;
+    top: 22%;
+    width: 60%;
+    background: #8E939C;
+    color: #fff;
+    padding: 5px;
+    left: 19%;
+    font-weight: 600;
+    color: #000;
+}
+.grid .grid-item .grid-box:hover a.primary {
+    background-color: #ffff18;
+    top: 40%;
+}
+/*.grid .grid-item .grid-box:hover .grid-box-options {
+    display: inline;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+.grid .grid-item .grid-box:hover .grid-box-options a{
+    color: #fff;
+    padding-top: 5px; 
+}
+.grid .grid-item .grid-box:hover .grid-box-options a.alterMapNameIcon,
+.grid .grid-item .grid-box:hover .grid-box-options a.change-image-map,
+.grid .grid-item .grid-box:hover .grid-box-options a.alterGameNameIcon {
+    left: 10px;
+    float: left;
+}
+.grid .grid-item .grid-box:hover .grid-box-options a.preview-map,
+.grid .grid-item .grid-box:hover .grid-box-options a.delete-mapa,
+.grid .grid-item .grid-box:hover .grid-box-options a.delete-jogo {
+    right: 10px;
+}
+.grid .grid-item span {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    font-size: 19px;
+}
+.grid .grid-item .fa {
+    margin: 10px;
+}*/
+.grid .grid-item .alterGameNameIcon {
+    position: relative;
+    cursor: pointer;
+}
+.grid .grid-item .delete-jogo {
+    right: 1px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.grid .grid-item  .delete-mapa {
+    right: 1px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.grid .grid-item .change-image-map {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.grid .grid-item .grid-box {
+    position: relative;
+}
+.grid-item span .fa {
+    font-size: 20px;
+    display: inline-block;
+}
+.grid .grid-item .create-game-box span {
+    background-color: #ffff18;
+    width: 85%;
+    margin: 0 20px;
+    color: #000;
+    padding: 5px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+/*back-link*/
+.back-link {
+    position: absolute;
+    top: 85px;
+    left: 55px;
+    background-color: #ebeb00;
+    color: #000;
+    border-radius: 100%;
+    padding: 5px 10px;
+    width: 40px;
+    height: 40px;
+}
+@media(max-width: 991px){
+    .back-link {
+        top: 130px;
+        left: 55px;
+    }
+}
+.back-link span {
+    display: none;
+}
+.back-link:hover {
+    color: #000;
+    background-color: #EEEE15;
+}
+.back-link:hover::after,
+.back-link:focus::after{
+    transition: ;
+    content: "Voltar";
+    width: 80px;
+    height: 25px;
+    background-color: #EEEE15;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50px);
+    border-radius: 22px; 
+    font-size: .6em ;
+    font-weight: 700;
+    line-height: .5 ;
+    text-align: left ;
+    padding: 10px;
+    position:absolute;
+    z-index: -1;
+} 
+
+/* Report questions */
+.reportAnsweredQuestionsList .item {
+    margin: 5px 0;
+}
+
+/*ball-button*/
+.ball-button-box {
+    position: absolute;
+    right: 15px;
+    top:0;
+
+}/*
+.painel-container .ball-button-box {
+    top: -10px;
+}
+.ball-button {
+    height: 42px;
+    display: block;
+    position: relative;
+    width: 145px;
+}
+.painel-container .ball-button {
+    width: 248px;
+}
+.ball-button .icon {
+    border-radius: 50%;
+    background-color: #ffff19;
+    padding: 19px 20px;
+    position: absolute;
+    top: -17px;
+    right: 0;
+    height: 58px;
+    width: 58px;
+}
+.ball-button .icon .fa {
+    width: 35px;
+    height: 35px;
+    color: #000;
+    font-size: 22px;
+    display: block;
+}
+.ball-button .info {
+    border-radius: 55px;
+    background-color: #ffff15;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    padding-right: 40px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    visibility: hidden;
+}*/
+.painel-container .ball-button .info {
+   padding-right: 120px;  
+}
+.ball-button:hover .info {
+    visibility: visible;
+}
+.ball-button-option {
+    background: rgba(89,89,89, .9);
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    padding: 10px;
+    z-index: 1;
+}
+.ball-button-option label {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.ball-button-option input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#salvarCamposFicha {
+    top: 90px;
+}
+.ball-button-option .novoCampo {
+    display: block;
+    width: 100%;
+    background-color: #ffff19;
+    border: none;
+    margin: 5px 0;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+@media(max-width: 991px){
+    .options-title{
+        font-size:1.2em;
+    }    
+}
+/*==================================Ball-Buttom===========================================*/
+.ball-button{
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    line-height: 0px;
+    color: black;
+    background-color: #FFFF15;
+    border: none;
+    border-radius: 50%;
+    float: right;
+    transform: translateX(10px) translateY(-27px);
+    position:relative;
+    z-index: 1;
+	    position: absolute;
+		    right: 0;
+}
+.ball-button:focus,
+.ball-button:hover{
+    background-color: #EEEE15;
+    color: black;
+}
+
+.ball-button:hover::after,
+.ball-button:focus::after{
+    transition: ;
+    content: attr(legenda);
+    width: 190px;
+    height: 33px;
+    background-color: #EEEE15;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-150px);
+    border-radius: 22px; 
+    font-size: .6em ;
+    font-weight: 700;
+    line-height: .5 ;
+    text-align: left ;
+    padding: 10px;
+    position:absolute;
+    z-index: -1;
+}
+.tooltip.top{
+    width:150px;
+}

@@ -1,0 +1,9 @@
+vendor/
+~/uploads/*.jpg
+upload/*.jpg
+~/uploads/*.jpeg
+upload/*.jpeg
+~/uploads/*.png
+upload/*.png
+
+vendor/

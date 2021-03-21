@@ -1,0 +1,128 @@
+.painel.active{
+	position: relative;
+	padding:0;
+}
+.painel-container.active{
+	padding:30px;
+	margin:0;
+	background: transparent;
+}
+.card-background.active{
+	border-radius: .25rem;
+    width: 100%;
+    height: 30em;
+    background-color: #fff2ec;
+    opacity:0.8;
+    overflow-y: scroll; 
+}
+.titulo.active{
+	background: transparent;
+}
+.ficha-container.active {
+    padding: 0;
+    margin: 0;
+}
+.ficha-container .titulo.active h2{
+    color: #000;
+}
+/*.leaflet-image-layer{
+	width: 645px !important;
+	height: 502px !important;
+}*/
+
+/*.painel-mapa-dado{
+	perspective:3000px;
+}*/
+#card-list-fields-active .save {
+	font-size: .8em;
+	font-weight: 700;
+}
+
+#card-list-fields-active .save input[type="text"]{
+	display: inline-block;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(246, 238, 238, 0);
+    border: none;
+    border-bottom: 2px solid #050505;
+}
+#game-points {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    background: #ebeb00;
+    color: #000;
+    top: 30px;
+    right: 50px;
+}
+
+/*  Report  */
+.showPlayerCard .fa,
+.showPlayerQuestions .fa {
+    color: #fff;
+}
+.showPlayerCard .fa:hover,
+.showPlayerCard .fa:focus,
+.showPlayerQuestions .fa:hover,
+.showPlayerQuestions .fa:focus{
+    color: #FFFF15;   
+}
+
+
+
+#reportTable tbody tr {
+    text-align: center;
+}
+
+
+
+/* correção nas nav */
+.nav.nav-tabs.margin-correction {
+    margin: 0 15px;
+}
+
+
+/*card-list-fields-active*/
+#card-list-fields-active button.aumenta,
+#card-list-fields-active button.diminui {
+    background: #ebeb00;
+    color: #000;
+    border: 1px solid #ebeb00;
+}
+#card-list-fields-active button.diminui {
+    margin-left: 10px;
+}
+#card-list-fields-active .save {
+    margin: 10px 0;
+}
+#card-list-fields-active .save input[type="text"] {
+    margin-left: 10px;
+}
+#card-list-fields-active input[type="text"].number {
+    width: 100px;
+    text-align: center;
+    margin-left: 0px;
+}
+#card-list-fields-active .save {
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/* Temporario para questionario */
+.sec-white {
+	background: radial-gradient(#101010 , #2a2a2a);
+	color: #fff;
+}
+.sec-white .button.btn {
+    background: #FFFF15;
+    font-weight: 600;
+    color: #000;
+    margin: 10px;
+    padding: 10px 15px;
+}
+
+.sec-white .button.btn:hover {
+    background: #FFFF43;
+}

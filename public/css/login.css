@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+input:-webkit-autofill {
+    color: #fff  !important;
+    background-color: rgba(246, 238, 238, 0) !important;
+}
+body {
+    background-image: url(../images/back3.jpg);
+    background-attachment: fixed;
+    width: 100% !important;
+    height: 100%;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Roboto', cursive;
+    font-style: normal;
+    background-repeat: round;
+}
+
+.logo{
+    position:relative;
+    box-sizing: content-box;
+    transform: translateY(-4.5rem);
+}
+.logo .img{
+    /*background-image: url(../images/DXLogo.png);*/
+    box-sizing: border-box;
+    height: 5em;
+    display: inline;
+    transform: rotate(8deg);
+}
+ .titulo-logo {
+    font-family: 'Caveat', 'Architects Daughter', cursive;
+    display: inline-block;
+    transform: translateY(.65em);
+    color:#ebeb00;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1em;
+    font-weight: 600;
+    font-size: 2em;
+    position: relative;
+}
+.titulo-logo b{
+    font-family: "Roboto";
+    font-size: 1em;
+}
+ .titulo-logo em{
+    /*position: absolute;*/
+    font-size:.75em;
+    /*width:10em;*/
+    /*transform:rotate(-2deg) translateY(.3em) translateX(-3em);*/
+}
+.painel {
+    top: 20%;
+    position: relative;
+}
+
+.login-painel {
+
+    border-radius: 10px;
+    background: #4c4c4c; /* Old browsers */
+    background: linear-gradient(180deg, #2a2e30 , #151515 );
+    /*background: radial-gradient(#151515, #25282d);*/
+    padding: 5rem 2.5rem 1rem;
+    color: #fff;
+    min-height: 25rem;
+    margin-bottom: .75rem;
+    bottom:5px;
+}
+.login-painel h2 {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.login-painel input[type="password"],
+.login-painel input[type="email"],
+.login-painel input[type="text"]
+{
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 21px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(246, 238, 238, 0) !important;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff ;
+    font-weight: 700;
+}
+ 
+.login-painel .row{
+    font-size: 21px;
+    color: #aaa;
+    font-weight: 700;
+    padding-bottom:20px;
+}
+.login-painel input[type="password"]:focus,
+.login-painel input[type="text"]:focus {
+  outline: none;
+  border-bottom-color: #D1D111;
+  color: #D1D111;
+}
+.login-painel button,
+.login-painel a{
+    background: #D1D111;
+    border: none;
+    color:#000;
+    font-weight: 700;
+    width:170px;
+    display: inline-block;
+    padding:5px 5px;
+    cursor:pointer;
+    margin:20px 0;
+}
+.login-painel button:focus,
+.login-painel button:hover,
+.login-painel button:active{
+    background: #FFFF15;
+    -webkit-box-shadow: none !important;
+    outline: none !important;
+}
+
+@media (max-width: 768px) {
+    .login-painel {
+        padding: 0 20px;
+         min-height: auto;
+    }
+}
+

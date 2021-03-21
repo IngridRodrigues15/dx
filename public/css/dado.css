@@ -1,0 +1,97 @@
+#roll-dice {
+	margin-top: 10px;
+	perspective:3000px;
+	
+}
+#dice-3d {
+	perspective:3000px;
+}
+
+#dice-3d .dado{
+	bottom: -70px;
+	right: 90px;
+	transform-style: preserve-3d;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+  	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(0.4) scaleY(0.4) scaleZ(0.4);
+}
+#roll-dice .dado{
+	transform-style: preserve-3d;
+	width: 200px;
+	height: 200px;
+    position: absolute;
+	transform: translateX(-70px) translateY(-70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(0.15) scaleY(0.15) scaleZ(0.15);
+}
+.face{
+	border-radius: 10px;
+	background:radial-gradient( #3a3a3a, #202020);
+	background-image: ;
+	box-sizing: border-box;
+	border:10px solid #151515;
+	display: block;
+  	width: 200px;
+  	height: 200px;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+.face .point{
+	border-radius: 50%;
+	position:absolute;
+	height: 20px;
+	width: 20px;
+	background:radial-gradient(#c0c0c0,#ffffff);
+}
+.pointCC{
+	top: 80px;
+	left: 80px;
+}
+.pointTL{
+	top: 	40px;
+	left:	40px;
+}
+.pointBR{
+	bottom: 40px;
+	right:	40px;
+}
+.pointTR{
+	top: 	40px;
+	right:	40px;
+}
+.pointBL{
+	bottom: 40px;
+	left:	40px;
+}
+.pointCR{
+	top: 	80px;
+	right:	40px;
+}
+.pointCL{
+	top: 	80px;
+	left:	40px;
+}
+
+#face1{
+	transform: translateZ(100px);
+}
+
+#face2{
+  	transform: translateX(100px) rotateY(90deg) rotate(90deg);
+}
+
+#face3{
+	transform: translateY(-100px) rotateX(-90deg);
+}
+
+#face4{
+  	transform: translateY(100px) rotateX(90deg);
+}
+
+#face5{
+  	transform: translateX(-100px) rotateY(-90deg) rotate(90deg);
+}
+
+#face6{
+	transform: translateZ(-100px) rotateY(180deg);
+}
